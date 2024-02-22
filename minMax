@@ -1,0 +1,12 @@
+def minMax(nums):
+    list = [int(x) for x in str(nums)]
+
+    listMin = min(list)
+    listMax = max(list)
+
+    if listMin == listMax:
+        print("min and max are the same!")
+
+    print(listMin, listMax)
+
+minMax(21052)

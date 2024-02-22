@@ -1,0 +1,8 @@
+def xToPowerY(x,y):
+     ans = 1 #creating answer value so we don't change x while iterating through y
+     for i in range (y):
+          ans*=x #increase y by 1, multiply answer (which we're changing everytime we iterate through the for loop) by x
+          
+     print(ans)
+
+xToPowerY(3,6)

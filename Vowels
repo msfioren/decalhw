@@ -1,0 +1,10 @@
+def vowels(string):
+    sum = 0 
+    vowels = ["a", "A", "e", "E", "i", "I", "o", "O" , "u", "U"]
+    for i in range (len(string)):
+        for x in range(len(vowels)):
+            if string[i] == vowels[x]:
+                    sum += 1
+    print(sum)
+
+vowels("sike i have three now becasue two stopped working lmao")

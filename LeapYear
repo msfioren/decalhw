@@ -1,0 +1,11 @@
+def checkLeapYear(year):
+    if year % 4 == 0:
+        if year % 100 != 0 & year % 400 == 0:
+                return True
+        else:
+             return False
+    else:
+        return False
+
+print(checkLeapYear(2000))
+

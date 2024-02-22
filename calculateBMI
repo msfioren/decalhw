@@ -1,0 +1,6 @@
+def calculateBMI(weight, height):
+    print(weight/(height*height))
+
+calculateBMI(1,10)
+calculateBMI(100,2)
+calculateBMI(10,20)

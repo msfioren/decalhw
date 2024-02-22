@@ -1,0 +1,31 @@
+def minMaxLoopy(input): #this only applies for the values 0-9. 0 cannot be the first value within the input.
+    list = [int(x) for x in str(input)]
+    max = list[0]
+    min = list[0]
+    j = 0
+    for i in range(1,len(list)):
+        if list[i] > max:
+            max = list[i]
+    print(max)
+    for i in range(1,len(list)):
+        if list[i] < min:
+            min = list[i]
+    print(min) 
+
+    while j < len(list):
+        if list[j] >= max:
+            max = list[j]
+        j +=1
+    print(max)
+    while j < len(list):
+        if list[j] <= min:
+            min = list[j]
+        j+=1
+    print(min)
+
+    if max == min:
+        print("max and min are the same!")
+
+    
+
+minMaxLoopy(999999)

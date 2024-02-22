@@ -1,0 +1,7 @@
+def rotate_Digits(n):
+    add = n % 10
+    n = n // 10
+    print(add * 10000 + n)
+
+    
+rotate_Digits(12345)
