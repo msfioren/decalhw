@@ -3,11 +3,11 @@ def minMaxLoopy(input): #this only applies for the values 0-9. 0 cannot be the f
     max = list[0]
     min = list[0]
     j = 0
-    for i in range(1,len(list)):
+    for i in range(len(list)):
         if list[i] > max:
             max = list[i]
     print(max)
-    for i in range(1,len(list)):
+    for i in range(len(list)):
         if list[i] < min:
             min = list[i]
     print(min) 
