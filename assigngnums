@@ -1,0 +1,8 @@
+def assignnums():
+    var = 0
+    lis = []
+    for i in range(0,50):
+        lis.append(i)
+        var = lis
+    print(lis)
+assignnums()

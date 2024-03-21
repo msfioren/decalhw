@@ -1,0 +1,6 @@
+def squarevals(lis):
+    lis = [2,3,4] #could also not have set values for lis and then at the end call this function with certain values to test
+    lis2 = []
+    for i in lis:
+       lis2.append(i**2) #iniially i tried to modify the original list, but i thought it would be easier to just create a new list so as to not delete data from the old one
+    print(lis2) #this code seems to be compiling correctly, so I'm confused as to why it doesn't print!

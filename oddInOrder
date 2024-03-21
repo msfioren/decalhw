@@ -1,0 +1,25 @@
+def oddinorder():
+    listA = [1,2,3,4,5,6,7,8,9,10]
+    listB = [20,21,22,23,24,25,26,27,28,29,30]
+    listC = []
+    for i in listA:
+        min = 10
+        max = 1
+        if list[i] > max:
+            max = list[i]
+        elif list[i] < min:
+            min = list[i]
+        if i % 2 != 0:
+            listC.append(listA[i])
+
+    for x in listB:
+        min = 30
+        max = 20
+        if list[x] > max:
+            max = list[x]
+        elif list[x] < min:
+            min = list[x]
+        if x % 2 != 0:
+            listC.append(listB[i])
+    
+    print(listC)

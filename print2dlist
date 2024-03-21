@@ -1,0 +1,15 @@
+def print2dlist():
+    matrix = [j][i]
+    rows = 5
+    n = 1
+    while n <=25:
+        for i in range (1,rows +1):
+            for j in range(1, rows +1):
+                matrix[j][i] = n
+            n+=1
+    print(matrix)
+
+    if(matrix[j][i] %3 == 0):
+        matrix[j][i] = '?'
+    elif(matrix[i][j] %3 == 0):
+        matrix[i][j] = '?'

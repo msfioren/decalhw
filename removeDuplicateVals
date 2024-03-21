@@ -1,0 +1,8 @@
+def removeDuplicateVals(lis):
+    lis = [1,1,2,3,4,5]
+    newlis = [] #make a new empty list and store one of every value in the original list in it so we're not actually removing anything
+    for i in lis:
+            if i not in newlis:
+                newlis.append(i)
+    lis = newlis
+    print(lis)
