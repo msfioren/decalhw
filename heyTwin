@@ -1,0 +1,10 @@
+import numpy as np
+def findEqual(arr):
+    ret = np.array([])
+    for i in arr:
+        print(i)
+        val = i[0]
+        if i==val:
+            ret = np.append(ret, np.array(i))
+        return ret
+print(findEqual(np.array([[1,1,1], [1,2,3], [2,2,2]])))

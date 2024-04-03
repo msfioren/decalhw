@@ -1,0 +1,8 @@
+def ineedspace(myarr):
+    newarr = []
+    for i in myarr:
+        for k in i:
+            newarr.append(k + " ")
+    print(newarr)
+
+ineedspace(['python', 'is', 'cool!'])
