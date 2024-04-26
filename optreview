@@ -1,0 +1,72 @@
+#Optional Review
+#1.1 
+import numpy as np
+import math
+
+x1 = np.linspace(0, 2*math.pi, num = 1000)
+print(x1)
+
+x2 = 2 * np.linspace(0, 2*math.pi, num = 100)
+print(x2)
+
+#1.2
+print(np.std(x1))
+print(np.mean(x1))
+print(np.median(x1))
+
+print(np.std(x2))
+print(np.mean(x2))
+print(np.median(x2))
+
+#1.3
+filterOfShape = np.zeros((200, 100))
+print(filterOfShape)
+
+filterOfShape[0:500] = 1
+filterOfShape[1000:1500] = 2
+
+#2
+a = np.arange(0,100) #if you don't choose arange then you have to deal w decimals which are yucky
+print(a)
+
+iseven = a[a%2 == 0]
+print(iseven)
+
+isodd = a[a%2 != 0]
+print(isodd[isodd%7 == 0])
+
+isgreaterthanfortytwo = a[a>42]
+print(isgreaterthanfortytwo)
+
+ismultipleoftwo = a[a%2 == 0]
+ismultipleofthree = ismultipleoftwo[ismultipleoftwo%3 == 0]
+ismultipleoffive = ismultipleofthree[ismultipleofthree%5 == 0]
+print(ismultipleoffive)
+
+#F-String documentation!
+#1.1 - who are your instructors?
+
+#def who(list):
+list = ['megan', 'charlie', 'mahum', 'pranathi', 'mira', 'josh', 'brianna']
+
+for i in range(len(list)):
+        print(list[i] + ' is an instructor in the python decal')
+
+#1.2 - finding lengths of names in list
+#def who(list):
+list = ['megan', 'charlie', 'mahum', 'pranathi', 'mira', 'josh', 'brianna']
+list1 = []
+        
+for i in range(len(list)):
+        list1.append(len(list[i]))
+
+print(list1)
+
+#1.3 - dictionary from lists
+
+#def dictfromlist(list, list1):
+list = ['megan', 'charlie', 'mahum', 'pranathi', 'mira', 'josh', 'brianna']
+list1 = [5, 7, 5, 8, 4, 4, 7]
+res = {list[i]: list1[i] for i in range(len(list))}
+
+print(res)
